@@ -1,0 +1,38 @@
+.main {
+    margin:  var(--separacion) 0;
+}
+
+.contenido_main img {
+    margin: 0 auto;
+}
+
+
+.contenido_main p {
+    max-width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contenido_main {
+       display: flex;
+       justify-content: center;
+       gap: 4rem;
+    }
+
+    .contenido_main p {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}
+
+
+
+.contenido_main div {
+    margin: 2rem 0;
+}
+
+.contenido_main h3 {
+    color: var(--colorMain)
+}

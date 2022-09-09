@@ -1,0 +1,56 @@
+.sobre_tech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--colorMain) 0%), url('../../assets//07-audifonos//07-audifonos/img/imagen-mujer.jpg');
+    background-position: right;
+    background-repeat: repeat, no-repeat;
+    background-size: 100% 110rem;
+}
+
+@media (min-width:768px) {
+    .sobre_tech {
+        background-image: linear-gradient(to left, transparent 50%, var(--colorMain) 0%), url('../../assets//07-audifonos//07-audifonos/img/imagen-mujer.jpg');
+        background-repeat: repeat, no-repeat;
+    }
+}
+
+
+.sobre_tech_grid {
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    row-gap: var(--separacion);
+}
+
+@media (min-width: 768px) {
+    .sobre_tech_grid {
+        display: grid;
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: unset;
+        column-gap: 4rem;
+        padding: calc(var(--separacion) * 2) 0;
+    }
+}
+
+
+.texto_sobre_tech {
+    grid-row: 2/3;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: var(--separacion);
+}
+
+@media (min-width:768px) {
+    .texto_sobre_tech {
+        padding-bottom: 0;
+    }
+}
+
+.texto_sobre_tech h2{
+    font-size: 4rem;
+}
+
+.texto_sobre_tech p {
+    font-size: 2rem;
+    line-height: 2;
+}
